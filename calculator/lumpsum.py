@@ -13,7 +13,7 @@ def lumpsum(
         interest_rate: Rate of return
         time_in_years: Duration of investment
         n: Number of compounded interests in a year
-    Retun:
+    Return:
         Estimated return
     """
     result=principal*(1+(interest_rate/100)/n)**(n*time_in_years)
