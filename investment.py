@@ -29,10 +29,10 @@ if __name__=="__main__":
 #    print(args)
    if args.investment_type=='lumpsum':
        result=lumpsum(principal=args.principal,interest_rate=args.rate,time_in_years=args.time)
-       print(f"Investment amount:{args.principal}\nYears: {args.time}\nRate of Interest: {args.rate}% \nReturn: {round(result)} " )
+       print(f"Investment amount:{args.principal}\nYears: {args.time}\nRate of Interest: {args.rate}% \nReturn: {result} " )
    elif args.investment_type=='sip':
        result=sip(principal=args.principal,interest_rate=args.rate,time_in_years=args.time)
-       print(f"Investment amount:{args.principal}\nYears: {args.time}\nRate of Interest: {args.rate}% \nReturn: {round(result)} " )
+       print(f"Investment amount:{args.principal}\nYears: {args.time}\nRate of Interest: {args.rate}% \nReturn: {result} " )
           
 #    print(args)
 # result=lumpsum(principal=args.total_investment,interest_rate=args.intrest_rate,time_in_years=args.time_in_years)

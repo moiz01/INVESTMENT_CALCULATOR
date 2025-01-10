@@ -17,5 +17,13 @@ def lumpsum(
         Estimated return
     """
     result=principal*(1+(interest_rate/100)/n)**(n*time_in_years)
-    return result
+
+
+    
+    formatted_number = "{:,}".format(round(result))
+    formatted_number = formatted_number.replace(',', ',', 1)  # Replace the first ',' to ',' format 
+    formatted_number = formatted_number.replace(',', ',')  
+    
+
+    return formatted_number
     
