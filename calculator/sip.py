@@ -1,6 +1,6 @@
 """This function calculate the sip
 """
-def sip(principal,interest_rate,time_in_years):
+def returns(principal,interest_rate,time_in_years):
     i=(interest_rate*0.01)/12
     n=time_in_years*12
     num=principal*(((1+i)**n)-1)*(1+i)

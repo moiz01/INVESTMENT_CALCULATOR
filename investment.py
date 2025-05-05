@@ -1,7 +1,7 @@
 import sys
 import argparse
-from calculator.lumpsum import lumpsum
-from calculator.sip import sip
+from calculator.lumpsum import returns as lumpsum_returns
+from calculator.sip import returns as sip_returns
 def argument_parser():
     parser=argparse.ArgumentParser(description="investment calculator")
     parser.add_argument('investment_type',type=str,choices=['lumpsum','sip'],help='present value of investment')
@@ -28,10 +28,10 @@ if __name__=="__main__":
    args= argument_parser().parse_args()
 #    print(args)
    if args.investment_type=='lumpsum':
-       result=lumpsum(principal=args.principal,interest_rate=args.rate,time_in_years=args.time)
+       result=lumpsum_returns(principal=args.principal,interest_rate=args.rate,time_in_years=args.time)
        print(f"Investment amount:{args.principal}\nYears: {args.time}\nRate of Interest: {args.rate}% \nReturn: {result} " )
    elif args.investment_type=='sip':
-       result=sip(principal=args.principal,interest_rate=args.rate,time_in_years=args.time)
+       result=sip_returns(principal=args.principal,interest_rate=args.rate,time_in_years=args.time)
        print(f"Investment amount:{args.principal}\nYears: {args.time}\nRate of Interest: {args.rate}% \nReturn: {result} " )
           
 #    print(args)

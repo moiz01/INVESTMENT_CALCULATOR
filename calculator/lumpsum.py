@@ -2,7 +2,7 @@
     Auther: Moiz
     Date: 8-Jul-2024
 """
-def lumpsum(
+def returns(
         principal,
         interest_rate,
         time_in_years,
